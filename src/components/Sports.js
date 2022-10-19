@@ -4,11 +4,10 @@ import { faRunning, faBicycle, faSwimmer } from '@fortawesome/free-solid-svg-ico
 
 const Sports = () => {
     return (
-        <div className="h-screen w-full bg-[#fffcf2] py-16 px-4 text-[#252422]">
+        <div className="h-screen w-full bg-[#fffcf2] py-16 px-4 text-[#252422]" id='sport'>
             <div className="max-w-[1240px] mx-auto flex flex-col h-full justify-between content-center text-center">
                 <h1 className='md:text-5xl sm:text-4xl text-2xl font-bold'>Sport types</h1>
-                <div className='flex flex-col h-full justify-between'>
-
+                <div className='flex flex-col h-full justify-around'>
                     <div>
                         <FontAwesomeIcon icon={faRunning} className="sm:text-8xl fa-4x"></FontAwesomeIcon>
                         <h2>
@@ -26,13 +25,6 @@ const Sports = () => {
                         <h2>
                             SWIMMING
                         </h2>
-                    </div>
-                    <div className="h-screen w-full">
-                        <div className="max-w-[1240px] mx-auto grid">
-
-                            <h1>Sport types</h1>
-
-                        </div>
                     </div>
                 </div>
             </div>

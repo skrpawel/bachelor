@@ -1,18 +1,26 @@
 import React from 'react'
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Sports from './components/Sports';
-import About from './components/About';
-import Footer from './components/Footer';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import Home from './components/Home';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Sports />
-      <About />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
